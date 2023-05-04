@@ -4,6 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.theme.NoteActivity">
+    tools:context=".ui.theme.NoteActivity"
+    android:background="#7E64FF">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar2"
+        android:layout_width="413dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/material_on_background_disabled"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <ImageButton
+        android:background="@color/material_on_background_disabled"
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/group_33"
+        tools:layout_editor_absoluteX="347dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <ImageButton
+        android:background="@color/material_on_background_disabled"
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bi_pin_angle_fill"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <ImageButton
+        android:background="@color/material_on_background_disabled"
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bi_arrow_left"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="359dp"
+        android:layout_height="41dp"
+        android:text="Заголовок"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="359dp"
+        android:layout_height="415dp"
+        android:text="Основной текст"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="215dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

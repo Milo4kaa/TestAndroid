@@ -62,4 +62,5 @@
         android:text="Основной текст"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="215dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

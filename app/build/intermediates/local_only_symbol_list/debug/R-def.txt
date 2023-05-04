@@ -6,6 +6,8 @@ color midl_color
 color start_color
 color white
 drawable activity_button_radius
+drawable bi_arrow_left
+drawable bi_pin_angle_fill
 drawable button_radius
 drawable gradient
 drawable group_21
@@ -22,8 +24,14 @@ id button
 id floatingActionButton
 id imageButton
 id imageButton2
+id imageButton5
+id imageButton6
+id imageButton7
 id imageView
 id materialToolbar
+id materialToolbar2
+id textView
+id textView2
 layout activity_main
 layout activity_note
 mipmap ic_launcher
