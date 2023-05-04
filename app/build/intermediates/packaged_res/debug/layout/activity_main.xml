@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="328dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="26dp"
+        android:clickable="true"
+        android:tint="#FFFFFF"
+        app:backgroundTint="#7E64FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+    <SearchView
+        android:layout_width="358dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/search_radius"
+        android:text="Поиск в заметках"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="256dp" />
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="62dp"
+        android:background="@drawable/linear_layout_round"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="184dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/material_on_background_disabled"
+            android:text="Расписание" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:="#272430"
+            android:backgroundTint="#272430"
+            android:text="Заметки" />
+    </LinearLayout>
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="413dp"
+        android:layout_height="143dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/material_on_background_disabled"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-1dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="87dp"
+        android:layout_height="81dp"
+        android:background="@color/material_on_background_disabled"
+        app:srcCompat="@drawable/group_55"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="47dp"
+        android:layout_height="62dp"
+        android:background="@color/material_on_background_disabled"
+        app:srcCompat="@drawable/group_33"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="80dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="116dp"
+        android:layout_height="24dp"
+        app:srcCompat="@drawable/on_time"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

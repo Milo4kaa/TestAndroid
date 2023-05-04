@@ -1,0 +1,35 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color end_color
+color midl_color
+color start_color
+color white
+drawable activity_button_radius
+drawable button_radius
+drawable gradient
+drawable group_33
+drawable group_55
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable linear_layout_round
+drawable on_time
+drawable search_radius
+id button
+id button2
+id floatingActionButton
+id imageButton
+id imageButton2
+id imageView
+id materialToolbar
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+mipmap icon2
+string app_name
+string todo
+style Base.Theme.ToDoList
+style Theme.ToDoList
+style roundFull
+xml backup_rules
+xml data_extraction_rules
