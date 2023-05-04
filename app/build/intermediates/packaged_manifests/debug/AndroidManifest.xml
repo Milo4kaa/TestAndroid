@@ -22,6 +22,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.ToDoList" >
         <activity
+            android:name="com.example.todolist.ui.theme.NoteActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.todolist.NoteActivity"
+            android:exported="false"
+            android:label="@string/title_activity_note"
+            android:theme="@style/Theme.ToDoList" />
+        <activity
             android:name="com.example.todolist.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -30,6 +38,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
@@ -41,7 +55,24 @@
             <meta-data
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
         </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ToDoList</string>
     <string name="todo">TODO</string>
+    <string name="title_activity_note">NoteActivity</string>
+    <string name="Заметки">Заметки</string>
+    <string name="Расписание">Расписание</string>
+    <string name="TODO">TODO</string>
+    <string name="Поиск_в_заметках">Поиск в заметках</string>
 </resources>
