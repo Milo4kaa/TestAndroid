@@ -9,25 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05430798-adb0-4753-90d3-b7c5df8081e5" name="Changes" comment="Вёрстка, Main экран">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/activity_button_radius.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/group_33.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/group_55.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/on_time.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/Group 33.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/Group 55.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/on.time.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.0/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-    </list>
+    <list default="true" id="05430798-adb0-4753-90d3-b7c5df8081e5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +169,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683152439589</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Вёрстка, Main version 1.1">
+      <created>1683193889730</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683193889730</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Вёрстка, Main экран v.1.1">
+      <created>1683194094066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683194094066</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -228,6 +224,8 @@
     <MESSAGE value="Начальная версия" />
     <MESSAGE value="Начальная версия1" />
     <MESSAGE value="Вёрстка, Main экран" />
-    <option name="LAST_COMMIT_MESSAGE" value="Вёрстка, Main экран" />
+    <MESSAGE value="Вёрстка, Main version 1.1" />
+    <MESSAGE value="Вёрстка, Main экран v.1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Вёрстка, Main экран v.1.1" />
   </component>
 </project>
