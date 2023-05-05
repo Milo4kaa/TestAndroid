@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#7E64FF"
+    android:onClick="onClickBackToMain"
     tools:context=".ui.theme.NoteActivity">
 
 
@@ -15,11 +16,11 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="40dp"
         android:background="#7E64FF"
+        android:contentDescription="@string/to_do"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton6"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/group_33"
-        android:contentDescription="@string/to_do" />
+        app:srcCompat="@drawable/group_33" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -30,12 +31,12 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="62dp"
         android:background="#7E64FF"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:contentDescription="@string/to_do"
+        app:layout_constraintBottom_toTopOf="@+id/Tittle"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
         app:layout_constraintStart_toEndOf="@+id/imageButton7"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bi_pin_angle_fill"
-        android:contentDescription="@string/to_do" />
+        app:srcCompat="@drawable/bi_pin_angle_fill" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -45,39 +46,42 @@
         android:layout_marginTop="60dp"
         android:layout_marginBottom="62dp"
         android:background="#7E64FF"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:contentDescription="@string/to_do"
+        android:onClick="BackToMain"
+        app:layout_constraintBottom_toTopOf="@+id/Tittle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/bi_arrow_left"
-        android:contentDescription="@string/to_do" />
+        app:srcCompat="@drawable/bi_arrow_left" />
 
-    <TextView
-        android:id="@+id/textView"
+    <EditText
+        android:id="@+id/Tittle"
         android:layout_width="359dp"
         android:layout_height="41dp"
         android:layout_marginStart="27dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="26dp"
         android:backgroundTint="#FBFBFB"
-        android:text="@string/Заголовок"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        android:hint="@string/Заголовок"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/MainText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <EditText
+        android:id="@+id/MainText"
+        android:hint="@string/Основной_текст"
+        android:textColorHint="#FFFFFF"
         android:layout_width="359dp"
         android:layout_height="0dp"
         android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
         android:layout_marginBottom="100dp"
-        android:text="@string/Основной_текст"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/Tittle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,8 +8,11 @@
     <string name="TODO">TODO</string>
     <string name="app_name">ToDoList</string>
     <string name="title_activity_note">NoteActivity</string>
+    <string name="to_do">TODO</string>
     <string name="todo">TODO</string>
+    <string name="Заголовок">Заголовок</string>
     <string name="Заметки">Заметки</string>
+    <string name="Основной_текст">Основной текст</string>
     <string name="Поиск_в_заметках">Поиск в заметках</string>
     <string name="Расписание">Расписание</string>
     <style name="Base.Theme.ToDoList" parent="Theme.Material3.DayNight.NoActionBar">

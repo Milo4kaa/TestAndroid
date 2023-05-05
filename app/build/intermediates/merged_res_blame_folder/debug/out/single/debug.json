@@ -36,6 +36,10 @@
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-59:\\drawable\\button_radius.xml"
     },
     {
+        "merged": "com.example.todolist.app-merged_res-57:/layout_activity_note.xml.flat",
+        "source": "com.example.todolist.app-main-59:/layout/activity_note.xml"
+    },
+    {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-57:\\drawable_gradient.xml.flat",
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-59:\\drawable\\gradient.xml"
     },
@@ -122,9 +126,5 @@
     {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-57:\\drawable_group_55.xml.flat",
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-59:\\drawable\\group_55.xml"
-    },
-    {
-        "merged": "com.example.todolist.app-merged_res-57:/layout_activity_main.xml.flat",
-        "source": "com.example.todolist.app-main-59:/layout/activity_main.xml"
     }
 ]

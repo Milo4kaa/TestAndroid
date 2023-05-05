@@ -19,7 +19,9 @@ drawable linear_layout_round
 drawable on_time
 drawable recycler_radius
 drawable search_radius
+id MainText
 id OpenNoteActivity
+id Tittle
 id button
 id floatingActionButton
 id imageButton
@@ -31,8 +33,6 @@ id imageView
 id linearLayout
 id recyclerView
 id searchView
-id textView
-id textView2
 layout activity_main
 layout activity_note
 mipmap ic_launcher
