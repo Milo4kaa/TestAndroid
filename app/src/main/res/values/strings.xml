@@ -6,4 +6,7 @@
     <string name="Расписание">Расписание</string>
     <string name="TODO">TODO</string>
     <string name="Поиск_в_заметках">Поиск в заметках</string>
+    <string name="Основной_текст">Основной текст</string>
+    <string name="Заголовок">Заголовок</string>
+    <string name="to_do">TODO</string>
 </resources>

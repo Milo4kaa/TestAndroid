@@ -28,8 +28,9 @@ id imageButton5
 id imageButton6
 id imageButton7
 id imageView
-id materialToolbar
-id materialToolbar2
+id linearLayout
+id recyclerView
+id searchView
 id textView
 id textView2
 layout activity_main
@@ -40,8 +41,11 @@ mipmap icon2
 string TODO
 string app_name
 string title_activity_note
+string to_do
 string todo
+string Заголовок
 string Заметки
+string Основной_текст
 string Поиск_в_заметках
 string Расписание
 style Base.Theme.ToDoList

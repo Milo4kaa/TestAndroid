@@ -4,63 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.theme.NoteActivity"
-    android:background="#7E64FF">
+    android:background="#7E64FF"
+    tools:context=".ui.theme.NoteActivity">
 
-
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar2"
-        android:layout_width="413dp"
-        android:layout_height="143dp"
-        android:layout_marginTop="16dp"
-        android:background="@color/material_on_background_disabled"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-1dp" />
 
     <ImageButton
-        android:background="@color/material_on_background_disabled"
         android:id="@+id/imageButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        android:background="#7E64FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton6"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/group_33"
-        tools:layout_editor_absoluteX="347dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:contentDescription="@string/to_do" />
 
     <ImageButton
-        android:background="@color/material_on_background_disabled"
         android:id="@+id/imageButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="62dp"
+        android:background="#7E64FF"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bi_pin_angle_fill"
-        tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:contentDescription="@string/to_do" />
 
     <ImageButton
-        android:background="@color/material_on_background_disabled"
         android:id="@+id/imageButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="62dp"
+        android:background="#7E64FF"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/bi_arrow_left"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="88dp" />
+        android:contentDescription="@string/to_do" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="359dp"
         android:layout_height="41dp"
-        android:text="Заголовок"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="174dp" />
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="26dp"
+        android:backgroundTint="#FBFBFB"
+        android:text="@string/Заголовок"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="359dp"
-        android:layout_height="415dp"
-        android:text="Основной текст"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="215dp" />
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/Основной_текст"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

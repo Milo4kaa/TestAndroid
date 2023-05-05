@@ -28,23 +28,35 @@
         android:focusable="true" />
 
     <SearchView
+        android:id="@+id/searchView"
         android:layout_width="358dp"
         android:layout_height="39dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/search_radius"
         android:text="@string/Поиск_в_заметках"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="256dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="289dp"
         android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/linear_layout_round"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="184dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
         tools:ignore="MissingConstraints">
 
         <Button
@@ -67,56 +79,60 @@
             tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
     </LinearLayout>
 
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/materialToolbar"
-        android:layout_width="413dp"
-        android:layout_height="143dp"
-        android:layout_marginTop="24dp"
-        android:background="@color/material_on_background_disabled"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="23dp"
+        android:background="#75342E5D"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-1dp"
+        app:srcCompat="@drawable/group_55"
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="87dp"
-        android:layout_height="81dp"
-        android:background="@color/material_on_background_disabled"
-        app:srcCompat="@drawable/group_55"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="70dp"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
-
-        <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="48dp"
-        android:layout_height="62dp"
-        android:background="@color/material_on_background_disabled"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="39dp"
+        android:background="#8D332C5A"
         android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/group_33"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="348dp"
-        tools:layout_editor_absoluteY="80dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="116dp"
+        android:layout_width="0dp"
         android:layout_height="24dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:background="#B0342D5D"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/on_time"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="102dp"
-        tools:ignore="MissingConstraints"
-        android:contentDescription="TODO" />
+        tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="334dp"
         android:layout_height="63dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="250dp"
         android:background="@drawable/recycler_radius"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="334dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

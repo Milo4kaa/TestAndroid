@@ -3073,6 +3073,7 @@ id legacy
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id m3_side_sheet
@@ -3080,8 +3081,6 @@ id marquee
 id masked
 id match_constraint
 id match_parent
-id materialToolbar
-id materialToolbar2
 id material_clock_display
 id material_clock_display_and_toggle
 id material_clock_face
@@ -3182,6 +3181,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerView
 id report_drawn
 id reverseSawtooth
 id right
@@ -3200,6 +3200,7 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id searchView
 id search_badge
 id search_bar
 id search_bar_text_view
@@ -3709,8 +3710,11 @@ string status_bar_notification_info_overflow
 string tab
 string template_percent
 string title_activity_note
+string to_do
 string todo
+string Заголовок
 string Заметки
+string Основной_текст
 string Поиск_в_заметках
 string Расписание
 style AlertDialog_AppCompat
