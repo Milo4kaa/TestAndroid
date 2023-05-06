@@ -1,4 +1,4 @@
-#Sat May 06 16:38:26 MSK 2023
+#Sat May 06 22:28:27 MSK 2023
 base.0=D\:\\Android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\Android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=D\:\\Android\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex

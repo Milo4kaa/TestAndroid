@@ -19,16 +19,16 @@ drawable linear_layout_round
 drawable on_time
 drawable recycler_radius
 drawable search_radius
+id BackAndSave
 id MainText
-id OpenNoteActivity
 id Tittle
 id button
+id button2
 id floatingActionButton
 id imageButton
 id imageButton2
 id imageButton5
 id imageButton6
-id imageButton7
 id imageView
 id linearLayout
 id recyclerView
@@ -40,6 +40,7 @@ mipmap ic_launcher_round
 mipmap icon2
 string TODO
 string app_name
+string title_activity_main3
 string title_activity_note
 string to_do
 string todo

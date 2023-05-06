@@ -13,7 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
     fun onClickOpenNoteActivity (view : View){
-
         val intent = Intent(this, NoteActivity::class.java)
         startActivity(intent)
     }

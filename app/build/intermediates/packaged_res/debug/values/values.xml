@@ -7,6 +7,7 @@
     <color name="white">#FFFFFFFF</color>
     <string name="TODO">TODO</string>
     <string name="app_name">ToDoList</string>
+    <string name="title_activity_main3">MainActivity3</string>
     <string name="title_activity_note">NoteActivity</string>
     <string name="to_do">TODO</string>
     <string name="todo">TODO</string>

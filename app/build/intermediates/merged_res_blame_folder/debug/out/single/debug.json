@@ -1,126 +1,130 @@
 [
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-anydpi-v26_icon2.png.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-anydpi-v26/icon2.png"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_group_55.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\group_55.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/xml_backup_rules.xml.flat",
-        "source": "com.example.todolist.app-main-59:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_group_21.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\group_21.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_bi_pin_angle_fill.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/bi_pin_angle_fill.xml"
+        "merged": "com.example.todolist.app-merged_res-63:/layout_activity_note.xml.flat",
+        "source": "com.example.todolist.app-main-65:/layout/activity_note.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_search_radius.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/search_radius.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_gradient.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\gradient.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_linear_layout_round.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\linear_layout_round.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.todolist.app-main-59:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_activity_button_radius.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/activity_button_radius.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_on_time.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\on_time.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/layout_activity_note.xml.flat",
-        "source": "com.example.todolist.app-main-59:/layout/activity_note.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_on_time.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/on_time.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_group_33.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/group_33.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_bi_arrow_left.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\bi_arrow_left.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_button_radius.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\button_radius.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-anydpi-v26_icon2.png.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-anydpi-v26\\icon2.png"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_gradient.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/gradient.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_group_55.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/group_55.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_linear_layout_round.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/linear_layout_round.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_search_radius.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\search_radius.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_bi_arrow_left.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/bi_arrow_left.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_group_33.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\group_33.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_button_radius.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/button_radius.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\layout_activity_note.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\layout\\activity_note.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.todolist.app-main-59:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/layout_activity_main.xml.flat",
-        "source": "com.example.todolist.app-main-59:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_recycler_radius.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\recycler_radius.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_recycler_radius.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/recycler_radius.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-57:/drawable_group_21.xml.flat",
-        "source": "com.example.todolist.app-main-59:/drawable/group_21.xml"
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_activity_button_radius.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\activity_button_radius.xml"
+    },
+    {
+        "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_bi_pin_angle_fill.xml.flat",
+        "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\bi_pin_angle_fill.xml"
     }
 ]

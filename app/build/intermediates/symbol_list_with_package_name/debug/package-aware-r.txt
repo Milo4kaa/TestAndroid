@@ -2826,12 +2826,12 @@ drawable tooltip_frame_light
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id BackAndSave
 id CTRL
 id FUNCTION
 id META
 id MainText
 id NO_DEBUG
-id OpenNoteActivity
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2926,6 +2926,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id button
+id button2
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3053,7 +3054,6 @@ id imageButton
 id imageButton2
 id imageButton5
 id imageButton6
-id imageButton7
 id imageView
 id immediateStop
 id included
@@ -3709,6 +3709,7 @@ string side_sheet_behavior
 string status_bar_notification_info_overflow
 string tab
 string template_percent
+string title_activity_main3
 string title_activity_note
 string to_do
 string todo

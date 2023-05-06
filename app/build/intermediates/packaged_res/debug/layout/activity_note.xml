@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#7E64FF"
-    android:onClick="onClickBackToMain"
     tools:context=".ui.theme.NoteActivity">
 
 
@@ -27,19 +26,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="259dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="90dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginBottom="60dp"
         android:background="#7E64FF"
         android:contentDescription="@string/to_do"
         app:layout_constraintBottom_toTopOf="@+id/Tittle"
         app:layout_constraintEnd_toStartOf="@+id/imageButton5"
-        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toEndOf="@+id/BackAndSave"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bi_pin_angle_fill" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/BackAndSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -47,7 +46,7 @@
         android:layout_marginBottom="62dp"
         android:background="#7E64FF"
         android:contentDescription="@string/to_do"
-        android:onClick="BackToMain"
+        android:onClick="onClickBackToMenu"
         app:layout_constraintBottom_toTopOf="@+id/Tittle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -59,9 +58,11 @@
         android:layout_width="359dp"
         android:layout_height="41dp"
         android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="26dp"
-        android:backgroundTint="#FBFBFB"
+        android:backgroundTint="#00FBFBFB"
+        android:maxLength="35"
+        android:textColor="#FFFFFF"
         android:hint="@string/Заголовок"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/MainText"
@@ -71,17 +72,22 @@
 
     <EditText
         android:id="@+id/MainText"
-        android:hint="@string/Основной_текст"
-        android:textColorHint="#FFFFFF"
         android:layout_width="359dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginBottom="100dp"
+        android:layout_height="471dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="506dp"
+        android:backgroundTint="#00ECE8E8"
+        android:ellipsize="start"
+        android:textColor="#FFFFFF"
+        android:hint="@string/Основной_текст"
+        android:gravity="left"
+        android:maxLines="@integer/material_motion_duration_medium_1"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Tittle" />
+        app:layout_constraintTop_toBottomOf="@+id/Tittle"
+        tools:ignore="RtlHardcoded" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
