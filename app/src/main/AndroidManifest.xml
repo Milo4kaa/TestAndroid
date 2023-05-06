@@ -13,9 +13,6 @@
         android:theme="@style/Theme.ToDoList"
         tools:targetApi="31">
         <activity
-            android:name=".ui.theme.NoteActivity"
-            android:exported="false" />
-        <activity
             android:name=".NoteActivity"
             android:exported="false"
             android:label="@string/title_activity_note"

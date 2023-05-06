@@ -12,11 +12,9 @@ class NoteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_note)
     }
-    fun onClickBackToMain (view : View){
-
+    fun  onClickBackToMenu(view: View)
+    {
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
-
-    fun BackToMain(view: View) {}
 }

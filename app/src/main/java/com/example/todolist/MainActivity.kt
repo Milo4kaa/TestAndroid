@@ -7,7 +7,6 @@ import android.view.View
 import com.example.todolist.ui.theme.NoteActivity
 
 class MainActivity : AppCompatActivity() {
-    public var i = ""
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
