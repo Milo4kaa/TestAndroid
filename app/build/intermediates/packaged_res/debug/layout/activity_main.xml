@@ -74,8 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#272430"
-            android:onClick="onClickOpenNoteActivity"
             android:text="@string/Заметки"
+            android:onClick="onClickOpenNoteActivity"
             tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
     </LinearLayout>
 

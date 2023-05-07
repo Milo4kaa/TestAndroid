@@ -20,10 +20,6 @@
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.todolist.app-merged_res-63:/layout_activity_note.xml.flat",
-        "source": "com.example.todolist.app-main-65:/layout/activity_note.xml"
-    },
-    {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_gradient.xml.flat",
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\drawable\\gradient.xml"
     },
@@ -34,6 +30,10 @@
     {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\xml_backup_rules.xml.flat",
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-65:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.todolist.app-merged_res-63:/layout_activity_main.xml.flat",
+        "source": "com.example.todolist.app-main-65:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-63:\\drawable_on_time.xml.flat",
