@@ -2831,7 +2831,9 @@ id CTRL
 id FUNCTION
 id META
 id MainText
+id MainTextView
 id NO_DEBUG
+id NoteAdd
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -2839,6 +2841,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id TitleView
 id Tittle
 id accelerate
 id accessibility_action_clickable_span
@@ -3024,7 +3027,6 @@ id fitXY
 id fixed
 id flip
 id floating
-id floatingActionButton
 id forever
 id fragment_container_view_tag
 id frost
@@ -3182,8 +3184,8 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rcView
 id rectangles
-id recyclerView
 id report_drawn
 id reverseSawtooth
 id right
@@ -3513,6 +3515,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout note_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

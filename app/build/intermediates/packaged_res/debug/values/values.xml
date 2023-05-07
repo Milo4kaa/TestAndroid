@@ -19,6 +19,7 @@
     <style name="Base.Theme.ToDoList" parent="Theme.Material3.DayNight.NoActionBar">
         
         
+        <item name="colorPrimary">#FF373162</item>
     </style>
     <style name="Theme.ToDoList" parent="Base.Theme.ToDoList"/>
     <style name="roundFull" parent="">

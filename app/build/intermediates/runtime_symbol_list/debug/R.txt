@@ -2830,7 +2830,9 @@ int id CTRL 0x7f080004
 int id FUNCTION 0x7f080005
 int id META 0x7f080006
 int id MainText 0x7f080007
+int id MainTextView 0x7f080203
 int id NO_DEBUG 0x7f080008
+int id NoteAdd 0x7f080205
 int id SHIFT 0x7f080009
 int id SHOW_ALL 0x7f08000a
 int id SHOW_PATH 0x7f08000b
@@ -2838,6 +2840,7 @@ int id SHOW_PROGRESS 0x7f08000c
 int id SYM 0x7f08000d
 int id TOP_END 0x7f08000e
 int id TOP_START 0x7f08000f
+int id TitleView 0x7f080204
 int id Tittle 0x7f080010
 int id accelerate 0x7f080011
 int id accessibility_action_clickable_span 0x7f080012
@@ -3023,7 +3026,6 @@ int id fitXY 0x7f0800c5
 int id fixed 0x7f0800c6
 int id flip 0x7f0800c7
 int id floating 0x7f0800c8
-int id floatingActionButton 0x7f0800c9
 int id forever 0x7f0800ca
 int id fragment_container_view_tag 0x7f0800cb
 int id frost 0x7f0800cc
@@ -3181,8 +3183,8 @@ int id progress_circular 0x7f080163
 int id progress_horizontal 0x7f080164
 int id radio 0x7f080165
 int id ratio 0x7f080166
+int id rcView 0x7f080206
 int id rectangles 0x7f080167
-int id recyclerView 0x7f080168
 int id report_drawn 0x7f080169
 int id reverseSawtooth 0x7f08016a
 int id right 0x7f08016b
@@ -3512,6 +3514,7 @@ int layout mtrl_picker_text_input_date 0x7f0b005d
 int layout mtrl_picker_text_input_date_range 0x7f0b005e
 int layout mtrl_search_bar 0x7f0b005f
 int layout mtrl_search_view 0x7f0b0060
+int layout note_item 0x7f0b006b
 int layout notification_action 0x7f0b0061
 int layout notification_action_tombstone 0x7f0b0062
 int layout notification_template_custom_big 0x7f0b0063

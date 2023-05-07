@@ -9,13 +9,15 @@
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
+        android:id="@+id/NoteAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="328dp"
         android:layout_marginEnd="31dp"
         android:layout_marginBottom="28dp"
         android:clickable="true"
+        android:contentDescription="@string/TODO"
+        android:focusable="true"
         android:tint="@color/white"
         app:backgroundTint="#7E64FF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,9 +25,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:rippleColor="#7E64FF"
-        app:srcCompat="@drawable/group_21"
-        android:contentDescription="@string/TODO"
-        android:focusable="true" />
+        app:srcCompat="@drawable/group_21" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -36,10 +36,10 @@
         android:layout_marginEnd="27dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/search_radius"
-        android:queryHint="Поиск заметки"
         android:iconifiedByDefault="false"
+        android:queryHint="Поиск заметки"
         android:text="@string/Поиск_в_заметках"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/rcView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
@@ -76,8 +76,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#272430"
-            android:text="@string/Заметки"
             android:onClick="onClickOpenNoteActivity"
+            android:text="@string/Заметки"
             tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
     </LinearLayout>
 
@@ -123,16 +123,17 @@
         tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="334dp"
-        android:layout_height="63dp"
+        android:id="@+id/rcView"
+        android:layout_width="343dp"
+        android:layout_height="380dp"
         android:layout_marginStart="38dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="39dp"
-        android:layout_marginBottom="250dp"
-        android:background="@drawable/recycler_radius"
-        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+        android:layout_marginBottom="24dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toTopOf="@+id/NoteAdd"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
         tools:ignore="MissingConstraints" />
