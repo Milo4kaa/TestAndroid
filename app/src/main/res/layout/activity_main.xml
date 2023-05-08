@@ -30,9 +30,7 @@
         android:layout_width="289dp"
         android:layout_height="42dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="30dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
         android:background="@drawable/linear_layout_round"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/searchView"
@@ -61,31 +59,33 @@
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="171dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="23dp"
-        android:background="#75342E5D"
-        android:contentDescription="TODO"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/group_55"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="39dp"
-        android:background="#8D332C5A"
-        android:contentDescription="TODO"
+        android:id="@+id/imageButton8"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="331dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/menu_button_radius"
+        android:onClick="onClickOpenMenuActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/group_33"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/group_21" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="343dp"
+        android:layout_height="380dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/material_on_background_disabled"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -102,34 +102,31 @@
         tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="42dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="331dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/menu_button_radius"
-        android:onClick="onClickOpenMenuActivity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/group_21" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rcView"
-        android:layout_width="343dp"
-        android:layout_height="380dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/imageButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="39dp"
-        android:layout_marginBottom="24dp"
-        android:background="@color/material_on_background_disabled"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton8"
+        android:background="#8D332C5A"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_33"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="23dp"
+        android:background="#75342E5D"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_55"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

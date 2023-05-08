@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.ToDoList" >
         <activity
+            android:name="com.example.todolist.Menu"
+            android:exported="false" />
+        <activity
             android:name="com.example.todolist.ui.theme.NoteActivity"
             android:exported="false"
             android:label="@string/title_activity_note"
