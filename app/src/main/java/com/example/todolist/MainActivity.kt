@@ -25,14 +25,18 @@ class MainActivity : AppCompatActivity() {
         binding.apply {
             rcView.layoutManager = LinearLayoutManager(this@MainActivity)
             rcView.adapter = adapter
-            NoteAdd.setOnClickListener {
-                val note = Note("","1")
+            imageButton2.setOnClickListener {
+                val note = Note("222222","122222")
                 adapter.addNote(note)
             }
         }
     }
     fun onClickOpenNoteActivity (view : View){
         val intent = Intent(this, NoteActivity::class.java)
+        startActivity(intent)
+    }
+    fun onClickOpenMenuActivity (view : View){
+        val intent = Intent(this, Menu::class.java)
         startActivity(intent)
     }
 }
