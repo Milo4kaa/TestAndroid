@@ -7,7 +7,6 @@ import android.view.View
 import com.example.todolist.MainActivity
 import com.example.todolist.Menu
 import com.example.todolist.Note
-import com.example.todolist.R
 import com.example.todolist.databinding.ActivityNoteBinding
 
 
@@ -18,6 +17,13 @@ class NoteActivity : AppCompatActivity() {
         binding = ActivityNoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
         initButtons()
+        val db = MainBD.connectBD(this)
+
+        binding.BackAndSave.setOnClickListener {
+            val note = Note(binding.Tittle.text.toString(),
+                binding.MainText.text.toString())
+            db.getDao().insertNote(note)
+        }
     }
     fun initButtons() = with(binding){
         BackAndSave.setOnClickListener {
