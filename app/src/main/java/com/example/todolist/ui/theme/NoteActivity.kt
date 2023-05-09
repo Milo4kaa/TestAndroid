@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.todolist.MainActivity
+import com.example.todolist.Menu
 import com.example.todolist.Note
 import com.example.todolist.R
 import com.example.todolist.databinding.ActivityNoteBinding
+
 
 class NoteActivity : AppCompatActivity() {
     lateinit var binding: ActivityNoteBinding
@@ -30,6 +32,14 @@ class NoteActivity : AppCompatActivity() {
     fun  onClickBackToMenu(view: View)
     {
         val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+    }
+    fun onClickOpenNoteActivity (view : View){
+        val intent = Intent(this, NoteActivity::class.java)
+        startActivity(intent)
+    }
+    fun onClickOpenMenuActivity (view : View){
+        val intent = Intent(this, Menu::class.java)
         startActivity(intent)
     }
 }

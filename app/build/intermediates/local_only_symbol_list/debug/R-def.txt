@@ -55,6 +55,7 @@ string app_name
 string title_activity_main3
 string title_activity_note
 string to_do
+string tod0o
 string todo
 string Заголовок
 string Заметки

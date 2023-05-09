@@ -11,6 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.todolist.databinding.ActivityMainBinding
+
 import com.example.todolist.ui.theme.NoteActivity
 
 class MainActivity : AppCompatActivity() {
@@ -46,6 +47,11 @@ class MainActivity : AppCompatActivity() {
     }
     fun onClickOpenMenuActivity (view : View){
         val intent = Intent(this, Menu::class.java)
+        startActivity(intent)
+    }
+    fun  onClickBackToMenu(view: View)
+    {
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
     }
 }

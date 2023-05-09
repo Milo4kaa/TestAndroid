@@ -7,8 +7,10 @@ import androidx.compose.ui.layout.Layout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.databinding.NoteItemBinding
 
+
 class NoteAdapter : RecyclerView.Adapter<NoteAdapter.NoteHolder>() {
     val noteList = ArrayList<Note>()
+    lateinit var  binding: NoteItemBinding
 
     class NoteHolder(item: View) : RecyclerView.ViewHolder(item) {
         val binding = NoteItemBinding.bind(item)

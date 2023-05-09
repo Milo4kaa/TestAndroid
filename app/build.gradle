@@ -1,8 +1,12 @@
+
+buildscript{
+    ext.kotlin_version = "1.6.0"
+}
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
-
 android {
     namespace 'com.example.todolist'
     compileSdk 33
@@ -33,9 +37,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-        compose true
+    buildFeatures{
+        dataBinding = true
+        viewBinding = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion '1.4.0'
