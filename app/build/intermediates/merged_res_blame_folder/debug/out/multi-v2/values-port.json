@@ -1,8 +1,25 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.todolist.app-mergeDebugResources-64:/values-port/values-port.xml",
+            "outputFile": "com.example.todolist.app-mergeDebugResources-67:/values-port/values-port.xml",
             "map": [
+                {
+                    "source": "C:\\Users\\Я\\.gradle\\caches\\transforms-3\\6bd969bfe26aab18f5d0e3d10455e3a1\\transformed\\car-ui-lib-2.0.0\\res\\values-port\\values.xml",
+                    "from": {
+                        "startLines": "4,7,8",
+                        "startColumns": "0,0,0",
+                        "startOffsets": "212,426,491",
+                        "endColumns": "59,64,62",
+                        "endOffsets": "271,490,553"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "111,175,244",
+                        "endColumns": "63,68,66",
+                        "endOffsets": "170,239,306"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Я\\.gradle\\caches\\transforms-3\\558e8d9b27b3ef1f19c48e98e25708f5\\transformed\\appcompat-1.6.1\\res\\values-port\\values-port.xml",
                     "from": {

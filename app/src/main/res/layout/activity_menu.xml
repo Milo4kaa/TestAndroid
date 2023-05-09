@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:onClick="onClickOpenNoteActivity"
+    android:onClick="onClickOpenMainActivity"
     tools:context=".Menu">
 
     <ImageButton
@@ -13,7 +13,7 @@
         android:layout_width="42dp"
         android:layout_height="40dp"
         android:layout_marginTop="530dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="37dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/menu_button_radius"
         android:onClick="onClickOpenNoteActivity"
@@ -27,7 +27,7 @@
         android:id="@+id/imageButton7"
         android:layout_width="42dp"
         android:layout_height="41dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="38dp"
         android:background="@drawable/menu_button_radius"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,7 +55,7 @@
         android:layout_width="63dp"
         android:layout_height="21dp"
         android:layout_marginStart="250dp"
-        android:layout_marginTop="534dp"
+        android:layout_marginTop="634dp"
         android:layout_marginEnd="15dp"
         android:text="@string/Заметки"
         android:textColor="#D3FFFFFF"

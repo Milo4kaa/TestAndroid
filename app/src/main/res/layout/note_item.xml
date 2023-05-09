@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/liner_radius"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -11,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+
         <androidx.cardview.widget.CardView
             android:layout_width="409dp"
             android:layout_height="wrap_content"
@@ -18,7 +20,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:background="#7E64FF"
+            android:background="@drawable/liner_radius"
             android:onClick="onClickOpenNoteActivity"
             app:cardCornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
