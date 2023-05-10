@@ -18,11 +18,13 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
         sViewsWithIds.put(R.id.linearLayout, 2);
         sViewsWithIds.put(R.id.button, 3);
         sViewsWithIds.put(R.id.button2, 4);
-        sViewsWithIds.put(R.id.imageButton8, 5);
-        sViewsWithIds.put(R.id.rcView, 6);
-        sViewsWithIds.put(R.id.imageView, 7);
-        sViewsWithIds.put(R.id.imageButton2, 8);
-        sViewsWithIds.put(R.id.imageButton, 9);
+        sViewsWithIds.put(R.id.rcView, 5);
+        sViewsWithIds.put(R.id.imageView, 6);
+        sViewsWithIds.put(R.id.imageButton2, 7);
+        sViewsWithIds.put(R.id.imageButton, 8);
+        sViewsWithIds.put(R.id.add_btn, 9);
+        sViewsWithIds.put(R.id.data_btn, 10);
+        sViewsWithIds.put(R.id.note_btn, 11);
     }
     // views
     @NonNull
@@ -33,18 +35,20 @@ public class ActivityMainBindingImpl extends ActivityMainBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityMainBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
     }
     private ActivityMainBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[9]
             , (android.widget.Button) bindings[3]
             , (android.widget.Button) bindings[4]
-            , (android.widget.ImageButton) bindings[9]
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[10]
             , (android.widget.ImageButton) bindings[8]
-            , (android.widget.ImageButton) bindings[5]
-            , (android.widget.ImageView) bindings[7]
+            , (android.widget.ImageButton) bindings[7]
+            , (android.widget.ImageView) bindings[6]
             , (android.widget.LinearLayout) bindings[2]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[6]
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[11]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[5]
             , (android.widget.SearchView) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];

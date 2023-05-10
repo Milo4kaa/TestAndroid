@@ -1,5 +1,9 @@
 R_DEF: Internal format may change without notice
 local
+anim from_button_anim
+anim rotate_close_anim
+anim rotate_open_anim
+anim to_button_anim
 color black
 color end_color
 color midl_color
@@ -28,23 +32,20 @@ id MainText
 id MainTextView
 id TitleView
 id Tittle
+id add_btn
 id button
 id button2
+id data_btn
 id imageButton
 id imageButton2
-id imageButton3
 id imageButton5
 id imageButton6
-id imageButton7
-id imageButton8
 id imageView
 id linearLayout
+id note_btn
 id rcView
 id searchView
-id textView
-id textView2
 layout activity_main
-layout activity_menu
 layout activity_note
 layout note_item
 mipmap ic_launcher
@@ -63,6 +64,8 @@ string Основной_текст
 string Поиск_в_заметках
 string Расписание
 style Base.Theme.ToDoList
+style FabShapeStyle
+style FloatingActionButtonStyle
 style Theme.ToDoList
 style roundFull
 xml backup_rules

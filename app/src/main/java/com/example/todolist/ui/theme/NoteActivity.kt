@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.example.todolist.MainActivity
-import com.example.todolist.Menu
 import com.example.todolist.Note
-import com.example.todolist.R
 import com.example.todolist.databinding.ActivityNoteBinding
 
 

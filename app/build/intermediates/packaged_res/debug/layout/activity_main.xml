@@ -12,7 +12,7 @@
         android:background="@drawable/gradient"
         tools:context=".MainActivity" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
 
-    <SearchView
+        <SearchView
         android:id="@+id/searchView"
         android:layout_width="358dp"
         android:layout_height="39dp"
@@ -63,35 +63,19 @@
             tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="42dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="331dp"
-        android:layout_marginEnd="38dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/menu_button_radius"
-        android:onClick="onClickOpenMenuActivity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/group_21" />
-
         <androidx.recyclerview.widget.RecyclerView
-            tools:listitem="@layout/note_item"
             android:id="@+id/rcView"
-            android:layout_width="359dp"
-            android:layout_height="316dp"
+            android:layout_width="338dp"
+            android:layout_height="336dp"
             android:layout_marginStart="38dp"
             android:layout_marginEnd="39dp"
-            android:layout_marginBottom="24dp"
-            app:layout_constraintBottom_toTopOf="@+id/imageButton8"
+            app:layout_constraintBottom_toTopOf="@+id/add_btn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:listitem="@layout/note_item" />
 
         <ImageView
         android:id="@+id/imageView"
@@ -133,6 +117,45 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/group_55"
         tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="36dp"
+            android:clickable="true"
+            app:backgroundTint="#7E64FF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/group_21" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/data_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#7E64FF"
+            app:layout_constraintBottom_toTopOf="@+id/add_btn"
+            app:layout_constraintEnd_toEndOf="@+id/add_btn"
+            app:srcCompat="@drawable/vector__1_" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/note_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#7E64FF"
+            app:layout_constraintBottom_toTopOf="@+id/data_btn"
+            app:layout_constraintEnd_toEndOf="@+id/data_btn"
+            app:srcCompat="@drawable/vector" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
          
