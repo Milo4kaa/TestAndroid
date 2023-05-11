@@ -5,15 +5,20 @@ package com.example.todolist
 import android.content.Intent
 import android.os.Bundle
 import android.text.format.DateFormat
+import android.util.Log
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.todolist.databinding.ActivityMainBinding
 import com.example.todolist.ui.theme.NoteActivity
+import com.example.todolist.ui.theme.ui.theme.AppDatabase
+import com.example.todolist.ui.theme.ui.theme.NoteAdapter
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +28,6 @@ class MainActivity : AppCompatActivity() {
     private val toButton: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.to_button_anim) }
     private var clicked = false
      lateinit var  binding: ActivityMainBinding
-     private var adapter = NoteAdapter()
     private var  editLauncher: ActivityResultLauncher<Intent>? = null
 
     override fun onCreate(savedInstanceState: Bundle?)
@@ -34,13 +38,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        init()
         binding.addBtn.setOnClickListener {
             onAddButtonClicked()
         }
-        editLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-            if (it.resultCode == RESULT_OK){
-                adapter.addNote(it.data?.getSerializableExtra("note") as Note)
+    }
+    override fun onResume(){
+      super.onResume()
+        lifecycleScope.launch {
+           val noteList= AppDatabase(this@MainActivity).getNoteDao().getAllNote()
+
+            binding.rcView.apply {
+                layoutManager = LinearLayoutManager(this@MainActivity)
+                adapter = NoteAdapter().apply {
+                    setData(noteList)
+                }
             }
         }
     }
@@ -79,15 +90,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun init(){
-        binding.apply {
-            rcView.layoutManager = LinearLayoutManager(this@MainActivity)
-            rcView.adapter = adapter
-            noteBtn.setOnClickListener {
-                editLauncher?.launch(Intent(this@MainActivity, NoteActivity::class.java))
-            }
-        }
-    }
     fun onClickOpenNoteActivity (view : View){
         val intent = Intent(this, NoteActivity::class.java)
         startActivity(intent)

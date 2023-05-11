@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity (tableName = "Notes")
-data  class NoteList (
+data  class NoteTable (
     @PrimaryKey(autoGenerate = true)
     var id: Int? = null,
 

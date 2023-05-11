@@ -4,9 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.lifecycle.lifecycleScope
 import com.example.todolist.MainActivity
 import com.example.todolist.Note
 import com.example.todolist.databinding.ActivityNoteBinding
+import com.example.todolist.ui.theme.ui.theme.AppDatabase
+import kotlinx.coroutines.launch
 
 
 class NoteActivity : AppCompatActivity() {
@@ -15,9 +18,22 @@ class NoteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        initButtons()
+        //initButtons()
+        binding.BackAndSave.setOnClickListener { addNote() }
     }
-    fun initButtons() = with(binding){
+
+    private fun addNote() {
+        val Title = binding.Tittle.text.toString()
+        val MainText = binding.MainText.text.toString()
+
+        lifecycleScope.launch {
+            val note = Note(Title = Title, MainText = MainText)
+            AppDatabase(this@NoteActivity).getNoteDao().addNote(note)
+            finish()
+        }
+    }
+
+    /*fun initButtons() = with(binding){
         BackAndSave.setOnClickListener {
             val note = Note(Tittle.text.toString(), MainText.text.toString())
             val editIntent = Intent().apply {
@@ -26,7 +42,7 @@ class NoteActivity : AppCompatActivity() {
             setResult(RESULT_OK , editIntent)
             finish()
         }
-    }
+    }*/
     fun  onClickBackToMenu(view: View)
     {
         val intent = Intent(this, MainActivity::class.java)

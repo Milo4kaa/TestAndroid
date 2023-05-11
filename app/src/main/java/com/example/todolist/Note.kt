@@ -1,5 +1,13 @@
 package com.example.todolist
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.io.Serializable
 
-data class Note(val title: String, val MainText: String): Serializable
+@Entity
+data class Note(
+    var Title:String ="",
+    var MainText:String =""
+){
+    @PrimaryKey(autoGenerate = true) var id:Int= 0
+}
