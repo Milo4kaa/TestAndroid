@@ -1,6 +1,6 @@
 
 buildscript{
-    ext.kotlin_version = "1.8.21"
+    ext.kotlin_version = "1.6.0"
 }
 
 plugins {
@@ -46,8 +46,8 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion '1.4.0'
-        kotlinCompilerVersion '1.4.0'
+        kotlinCompilerExtensionVersion '1.4.7'
+        kotlinCompilerVersion '1.4.7'
     }
     packagingOptions {
         resources {

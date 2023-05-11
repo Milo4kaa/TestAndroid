@@ -1459,8 +1459,6 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
-color call_notification_answer_color
-color call_notification_decline_color
 color car_ui_activity_background_color
 color car_ui_color_accent
 color car_ui_dialog_icon_color
@@ -3109,12 +3107,6 @@ drawable group_33
 drawable group_55
 drawable ic_arrow_back_black_24
 drawable ic_arrow_down_24dp
-drawable ic_call_answer
-drawable ic_call_answer_low
-drawable ic_call_answer_video
-drawable ic_call_answer_video_low
-drawable ic_call_decline
-drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
@@ -4156,13 +4148,6 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
-string call_notification_answer_action
-string call_notification_answer_video_action
-string call_notification_decline_action
-string call_notification_hang_up_action
-string call_notification_incoming_text
-string call_notification_ongoing_text
-string call_notification_screening_text
 string car_ui_alert_dialog_default_button
 string car_ui_dialog_preference_negative
 string car_ui_dialog_preference_positive

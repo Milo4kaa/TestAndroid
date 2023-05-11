@@ -93,7 +93,7 @@ public final class NoteDao_Impl implements NoteDao {
   }
 
   @Override
-  public Object addNote(final Note note, final Continuation<? super Unit> continuation) {
+  public Object addNote(final Note note, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -106,11 +106,11 @@ public final class NoteDao_Impl implements NoteDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, $completion);
   }
 
   @Override
-  public Object deleteNote(final Note note, final Continuation<? super Unit> continuation) {
+  public Object deleteNote(final Note note, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -123,11 +123,11 @@ public final class NoteDao_Impl implements NoteDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, $completion);
   }
 
   @Override
-  public Object updateNote(final Note note, final Continuation<? super Unit> continuation) {
+  public Object updateNote(final Note note, final Continuation<? super Unit> $completion) {
     return CoroutinesRoom.execute(__db, true, new Callable<Unit>() {
       @Override
       public Unit call() throws Exception {
@@ -140,11 +140,11 @@ public final class NoteDao_Impl implements NoteDao {
           __db.endTransaction();
         }
       }
-    }, continuation);
+    }, $completion);
   }
 
   @Override
-  public Object getAllNote(final Continuation<? super List<Note>> continuation) {
+  public Object getAllNote(final Continuation<? super List<Note>> $completion) {
     final String _sql = "SELECT * FROM note ORDER BY id DESC";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
@@ -183,7 +183,7 @@ public final class NoteDao_Impl implements NoteDao {
           _statement.release();
         }
       }
-    }, continuation);
+    }, $completion);
   }
 
   public static List<Class<?>> getRequiredConverters() {
