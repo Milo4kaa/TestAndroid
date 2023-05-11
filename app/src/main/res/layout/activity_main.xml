@@ -13,117 +13,113 @@
         tools:context=".MainActivity">
 
         <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="358dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/search_radius"
-        android:iconifiedByDefault="false"
-        android:queryHint="Поиск заметки"
-        android:text="@string/Поиск_в_заметках"
-        app:layout_constraintBottom_toTopOf="@+id/rcView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:ignore="MissingConstraints" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="289dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:background="@drawable/linear_layout_round"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/searchView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
-        tools:ignore="MissingConstraints">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="116dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/material_on_background_disabled"
-            android:text="@string/Расписание"
-            tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
-
-        <Button
-            android:id="@+id/button2"
+            android:id="@+id/searchView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="#272430"
-            android:text="@string/Заметки"
-            tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
-    </LinearLayout>
+            android:layout_height="39dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/search_radius"
+            android:iconifiedByDefault="false"
+            android:queryHint="Поиск заметки"
+            android:text="@string/Поиск_в_заметках"
+            app:layout_constraintBottom_toTopOf="@+id/rcView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.84"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/linear_layout_round"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/searchView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/material_on_background_disabled"
+                android:text="@string/Расписание"
+                tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#272430"
+                android:text="@string/Заметки"
+                tools:ignore="ButtonStyle,TouchTargetSizeCheck" />
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcView"
-            android:layout_width="338dp"
-            android:layout_height="336dp"
-            android:layout_marginStart="38dp"
-            android:layout_marginEnd="39dp"
-            app:layout_constraintBottom_toTopOf="@+id/add_btn"
+            tools:listitem="@layout/note_item"
+            android:layout_width="318dp"
+            android:layout_height="432dp"
+            app:layout_constraintBottom_toBottomOf="@+id/add_btn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView"
-            tools:ignore="MissingConstraints"
-            tools:listitem="@layout/note_item" />
+            tools:ignore="MissingConstraints" />
 
         <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="60dp"
-        android:background="#B0342D5D"
-        android:contentDescription="TODO"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/on_time"
-        tools:ignore="MissingConstraints" />
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:background="#B0342D5D"
+            android:contentDescription="TODO"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/on_time"
+            tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="39dp"
-        android:background="#8D332C5A"
-        android:contentDescription="TODO"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/group_33"
-        tools:ignore="MissingConstraints" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="50dp"
+            android:background="#8D332C5A"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/group_33"
+            tools:ignore="MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="171dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="23dp"
-        android:background="#75342E5D"
-        android:contentDescription="@string/tod0o"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/group_55"
-        tools:ignore="MissingConstraints" />
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="35dp"
+            android:background="#75342E5D"
+            android:contentDescription="@string/tod0o"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/group_55"
+            tools:ignore="MissingConstraints" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/add_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="28dp"
-            android:layout_marginBottom="36dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="52dp"
             android:clickable="true"
             app:backgroundTint="#7E64FF"
             app:layout_constraintBottom_toBottomOf="parent"
