@@ -5,22 +5,20 @@ package com.example.todolist
 import android.content.Intent
 import android.os.Bundle
 import android.text.format.DateFormat
-import android.util.Log
-import android.view.SearchEvent
 import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.SearchView
 import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.ui.text.toLowerCase
 import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.ItemTouchHelper.RIGHT
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.databinding.ActivityMainBinding
 import com.example.todolist.ui.theme.NoteActivity
-import com.example.todolist.ui.theme.NoteTable
 import com.example.todolist.ui.theme.ui.theme.AppDatabase
 import com.example.todolist.ui.theme.ui.theme.NoteAdapter
 import kotlinx.coroutines.launch
@@ -33,12 +31,13 @@ class MainActivity : AppCompatActivity() {
     private val fromButton: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.from_button_anim) }
     private val toButton: Animation by lazy { AnimationUtils.loadAnimation(this, R.anim.to_button_anim) }
     private var clicked = false
+    private var mAdapter:NoteAdapter? = null
      lateinit var  binding: ActivityMainBinding
     private var  editLauncher: ActivityResultLauncher<Intent>? = null
     private lateinit var searchView: SearchView
     private lateinit var recyclerView: RecyclerView
-    var searchList = ArrayList<Note>()
-    var dataList = ArrayList<Note>()
+    var searchList = mutableListOf<Note>()
+    var dataList = mutableListOf<Note>()
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -48,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        swipeToDelete()
         binding.addBtn.setOnClickListener {
             onAddButtonClicked()
         }
@@ -79,25 +79,66 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
+    private fun setAdapter(list: List<Note>){
+        mAdapter?.setData(list)
+    }
 
     override fun onResume(){
       super.onResume()
         lifecycleScope.launch {
            val noteList= AppDatabase(this@MainActivity).getNoteDao().getAllNote()
 
+            mAdapter = NoteAdapter()
             binding.rcView.apply {
                 searchList.addAll(dataList)
                 layoutManager = LinearLayoutManager(this@MainActivity)
-                adapter = NoteAdapter().apply {
-                    setData(noteList)
-                    setOnActionEditListener {
+                adapter = mAdapter
+                  setAdapter(noteList)
+                   mAdapter?.setOnActionEditListener {
                         val intent = Intent(this@MainActivity, NoteActivity::class.java)
                         intent.putExtra("Data",it)
                         startActivity(intent)
                     }
-                }
             }
         }
+    }
+    private fun swipeToDelete(){
+        ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
+            ItemTouchHelper.UP or ItemTouchHelper.DOWN,
+            RIGHT
+        ){
+            override fun onMove(
+                recyclerView: RecyclerView,
+                viewHolder: RecyclerView.ViewHolder,
+                target: RecyclerView.ViewHolder
+            ): Boolean {
+                return true
+            }
+
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                lifecycleScope.launch {
+                    val noteList= AppDatabase(this@MainActivity).getNoteDao().getAllNote()
+                mAdapter?.setOnActionDeleteListener {
+                    val builder = AlertDialog.Builder(this@MainActivity)
+                    builder.setMessage("Вы хотите удалить записку?")
+                    builder.setPositiveButton("Да"){p0, p1 ->
+                        lifecycleScope.launch {
+                            AppDatabase(this@MainActivity).getNoteDao().deleteNote(it)
+                            val list= AppDatabase(this@MainActivity).getNoteDao().getAllNote()
+                            setAdapter(list)
+                        }
+                        p0.dismiss()
+                    }
+                    builder.setNegativeButton("Нет"){p0,p1->
+                        p0.dismiss()
+                    }
+                    val dialog = builder.create()
+                    dialog.show()
+                }
+            }
+           }
+
+        }).attachToRecyclerView(binding.rcView)
     }
     private  fun onAddButtonClicked(){
         setVisibility(clicked)
