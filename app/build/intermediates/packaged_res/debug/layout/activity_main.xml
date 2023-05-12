@@ -64,6 +64,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcView"
+            tools:listitem="@layout/note_item"
             android:layout_width="318dp"
             android:layout_height="432dp"
             app:layout_constraintBottom_toBottomOf="@+id/add_btn"
@@ -71,8 +72,7 @@
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/searchView"
-            tools:ignore="MissingConstraints"
-            tools:listitem="@layout/note_item" />
+            tools:ignore="MissingConstraints" />
 
         <ImageView
             android:id="@+id/imageView"

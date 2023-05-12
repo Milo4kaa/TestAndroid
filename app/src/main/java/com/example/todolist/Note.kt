@@ -8,6 +8,6 @@ import java.io.Serializable
 data class Note(
     var Title:String ="",
     var MainText:String =""
-){
+):Serializable{
     @PrimaryKey(autoGenerate = true) var id:Int= 0
 }

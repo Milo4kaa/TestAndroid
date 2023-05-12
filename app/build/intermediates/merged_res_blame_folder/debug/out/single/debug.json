@@ -24,6 +24,10 @@
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-71:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "com.example.todolist.app-merged_res-69:/layout_note_item.xml.flat",
+        "source": "com.example.todolist.app-main-71:/layout/note_item.xml"
+    },
+    {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-69:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-71:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -82,10 +86,6 @@
     {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-69:\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-main-71:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.todolist.app-merged_res-69:/layout_activity_main.xml.flat",
-        "source": "com.example.todolist.app-main-71:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\Я\\.gradle\\daemon\\8.0\\com.example.todolist.app-merged_res-69:\\mipmap-hdpi_ic_launcher.webp.flat",

@@ -28,6 +28,7 @@ drawable search_radius
 drawable vector
 drawable vector__1_
 id BackAndSave
+id Liner
 id MainText
 id MainTextView
 id TitleView

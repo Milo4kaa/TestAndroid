@@ -14,8 +14,9 @@ public class NoteItemBindingImpl extends NoteItemBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.TitleView, 1);
-        sViewsWithIds.put(R.id.MainTextView, 2);
+        sViewsWithIds.put(R.id.Liner, 1);
+        sViewsWithIds.put(R.id.TitleView, 2);
+        sViewsWithIds.put(R.id.MainTextView, 3);
     }
     // views
     @NonNull
@@ -26,12 +27,13 @@ public class NoteItemBindingImpl extends NoteItemBinding  {
     // Inverse Binding Event Handlers
 
     public NoteItemBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private NoteItemBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (android.widget.LinearLayout) bindings[1]
+            , (android.widget.TextView) bindings[3]
             , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[1]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);
